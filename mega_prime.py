@@ -6,10 +6,10 @@ def prime(n):
         if n%i==0:
             c+=1
     if c==0:
-        return True 
+        return True
     else:
-         return False
-n= int(input())
+        return False
+n=int(input())
 if prime(n):
     while n:
         r=n%10
@@ -19,7 +19,7 @@ if prime(n):
             break
     else:
         print("Mega Prime")
-        
-
 else:
-   print("Not Mega Prime")
+    print("Not Mega Prime")
+    
+        
