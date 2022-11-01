@@ -10,23 +10,22 @@ def pal(n):
     else:
         return False
 n=int(input())
-tem=n
+temp=n
 for i in range(n-1,0,-1):
-    if pal(i)==True:
-        a=i
+    if pal(i):
+        d=i
         break
 n=n+1
 while n:
-    if pal(n)==True:
-        b=n
+    if pal(n):
+        e=n
         break
     n+=1
-d=abs(tem-a)
-e=abs(tem-b)
-if d==e:
-    print(a,b)
-elif d>e:
-    print(b)
+f=abs(temp-d)
+g=abs(temp-e)
+if f>g:
+    print(e)
+elif f<g:
+    print(d)
 else:
-    print(a)
-    
+    print(d,e)
